@@ -1,0 +1,9 @@
+{
+  "name": "Project-Bot",
+  "description": "Bot anonymous chat telegram.",
+  "repository": "https://github.com/kucekmill/RandomChatBot",
+  "keywords": ["Project-Bot", "telegram", "python"],
+  "env": {
+    "TOKEN": {
+      "description": "Dapatkan di @botfather",
+      "required": true
