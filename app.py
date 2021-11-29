@@ -71,18 +71,18 @@ def handle(update):
 
 		if text == "/end" and uid in queue["occupied"]:
 			print('[SB] ' + str(uid) + ' left percakapan dengan ' + str(queue["occupied"][uid]))
-			bot.sendMessage(uid, "Percakapan anda selesai, I hope you enjoyed it :)")
-			bot.sendMessage(uid, "Type /start to get matched with a new partner")
-			bot.sendMessage(uid, "We're ending the conversation...")
-			bot.sendMessage(queue["occupied"][uid], "Your conversation is over, I hope you enjoyed it :)")
-			bot.sendMessage(queue["occupied"][uid], "Your conversation partner left the chat")
+			bot.sendMessage(uid, "Percakapan anda selesai, Saya harap anda menikmatinya :)")
+			bot.sendMessage(uid, "Ketik /start untuk dicocokkan dengan pasangan baru")
+			bot.sendMessage(uid, "Kami mengakhiri percakapan...")
+			bot.sendMessage(queue["occupied"][uid], "Percakapan Anda selesai, Saya harap Anda menikmatinya :)")
+			bot.sendMessage(queue["occupied"][uid], "Mitra percakapan anda meninggalkan obrolan")
 			del queue["occupied"][queue["occupied"][uid]]
 			del queue["occupied"][uid]
 
 		if text == "/start":
 			if not uid in queue["occupied"]:
-				bot.sendMessage(uid, 'Looking for a stranger to match you with... Hold on!')
-				print("[SB] " + str(uid) + " joined the queue")
+				bot.sendMessage(uid, 'Mencari stranger yang cocok denganmu... Tunggu!')
+				print("[SB] " + str(uid) + " bergabung dalam antrian")
 				queue["free"].append(uid)
 
 		if text == "/help":
