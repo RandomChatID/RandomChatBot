@@ -70,8 +70,8 @@ def handle(update):
 				bot.sendMessage(queue["occupied"][uid], "Stranger mengirimi anda stiker 🖼️!")
 
 		if text == "/end" and uid in queue["occupied"]:
-			print('[SB] ' + str(uid) + ' left the conversation with ' + str(queue["occupied"][uid]))
-			bot.sendMessage(uid, "Your conversation is over, I hope you enjoyed it :)")
+			print('[SB] ' + str(uid) + ' left percakapan dengan ' + str(queue["occupied"][uid]))
+			bot.sendMessage(uid, "Percakapan anda selesai, I hope you enjoyed it :)")
 			bot.sendMessage(uid, "Type /start to get matched with a new partner")
 			bot.sendMessage(uid, "We're ending the conversation...")
 			bot.sendMessage(queue["occupied"][uid], "Your conversation is over, I hope you enjoyed it :)")
