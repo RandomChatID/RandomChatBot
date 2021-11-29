@@ -48,7 +48,8 @@ def handle(update):
 		if uid in queue["occupied"]:
 			if 'text' in update:
 				if text != "/end":
-					bot.sendMessage(queue["occupied"][uid], "Stranger 👥: " + text), "Pengguna Lain 👥: " + text)
+				bot.sendMessage(queue["occupied"][uid], "Stranger 👥: " + text)
+				bot.sendMessage(queue["occupied"][uid], "Pengguna Lain 👥: " + text)
 			
 			if 'photo' in update:
 				if config[str(queue["occupied"][uid])]["pics"]:
