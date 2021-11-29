@@ -86,7 +86,7 @@ def handle(update):
 				queue["free"].append(uid)
 
 		if text == "/help":
-			bot.sendMessage(uid, "Help:\n\nMenggunakan /start untuk mulai mencari pasangan percakapan, setelah anda cocok, anda dapat menggunakan /end untuk mengakhiri percakapan.\n\nJika Anda memiliki pertanyaan atau memerlukan bantuan, join @sadnesstalk atau bertanya @sadnesstalk.\n@antigabutbrothers")
+			bot.sendMessage(uid, "Help:\n\nMenggunakan /start untuk mulai mencari pasangan percakapan, setelah kamu cocok, anda dapat menggunakan /end untuk mengakhiri percakapan.\n\nJika anda memiliki pertanyaan atau memerlukan bantuan, join @sadnesstalk atau bertanya @sadnesstalk.\n@antigabutbrothers")
 
 		if text == "/nopics":
 			config[str(uid)]["pics"] = not config[str(uid)]["pics"] 
