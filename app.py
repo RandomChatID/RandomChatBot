@@ -17,7 +17,7 @@ def saveConfig(data):
 
 if __name__ == '__main__':
 	s = time.time()
-	print('[#] Swirlbot 2\n[i] Created by TheFamilyTeam - @TheFamilyTeam\n')
+	print('[#] Swirlbot 2\n[i] Created by @wan210 - @sadnesstalk\n')
 	print('[#] Checking config...')
 	if not os.path.isfile('config.json'):
 		print('[#] Creating config file...')
