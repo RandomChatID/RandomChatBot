@@ -62,12 +62,12 @@ def handle(update):
 			if 'video' in update:
 				video = update['video']['file_id']
 				bot.sendVideo(queue["occupied"][uid], video)
-				bot.sendMessage(queue["occupied"][uid], "Stranger sends you a video!")
+				bot.sendMessage(queue["occupied"][uid], "Stranger sends you a video 🎥!")
 
 			if 'sticker' in update:
 				sticker = update['sticker']['file_id']
 				bot.sendDocument(queue["occupied"][uid], sticker)
-				bot.sendMessage(queue["occupied"][uid], "Stranger sends you a sticker!")
+				bot.sendMessage(queue["occupied"][uid], "Stranger sends you a sticker 🖼️!")
 
 		if text == "/end" and uid in queue["occupied"]:
 			print('[SB] ' + str(uid) + ' left the conversation with ' + str(queue["occupied"][uid]))
