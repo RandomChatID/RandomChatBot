@@ -57,7 +57,7 @@ def handle(update):
 					bot.sendMessage(queue["occupied"][uid], "Stranger mengirimi anda foto 📷!")
 				else:
 					bot.sendMessage(queue["occupied"][uid], "Stranger mencoba mengirimi anda foto, tapi kamu menonaktifkan ini, Anda dapat mengaktifkan foto dengan menggunakan perintah /nopics")
-					bot.sendMessage(uid, "Stranger disabled photos, and will not receive your photos")
+					bot.sendMessage(uid, "Stranger foto yang dinonaktifkan, dan tidak akan menerima foto anda")
 
 			if 'video' in update:
 				video = update['video']['file_id']
