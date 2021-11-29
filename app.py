@@ -67,7 +67,7 @@ def handle(update):
 			if 'sticker' in update:
 				sticker = update['sticker']['file_id']
 				bot.sendDocument(queue["occupied"][uid], sticker)
-				bot.sendMessage(queue["occupied"][uid], "Stranger sends you a sticker 🖼️!")
+				bot.sendMessage(queue["occupied"][uid], "Stranger mengirimi Anda stiker 🖼️!")
 
 		if text == "/end" and uid in queue["occupied"]:
 			print('[SB] ' + str(uid) + ' left the conversation with ' + str(queue["occupied"][uid]))
