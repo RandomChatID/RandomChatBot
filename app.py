@@ -91,9 +91,9 @@ def handle(update):
 		if text == "/nopics":
 			config[str(uid)]["pics"] = not config[str(uid)]["pics"] 
 			if config[str(uid)]["pics"]:
-				bot.sendMessage(uid, "Strangers can now send you photos!")
+				bot.sendMessage(uid, "Strangers sekarang dapat mengirimi anda foto!")
 			else:
-				bot.sendMessage(uid, "Strangers won't be able to send you photos anymore!")
+				bot.sendMessage(uid, "Strangers tidak akan dapat mengirimi anda foto lagi!")
 			saveConfig(config)
 
 		if len(queue["free"]) > 1 and not uid in queue["occupied"]:
