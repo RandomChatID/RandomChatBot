@@ -48,7 +48,7 @@ def handle(update):
 		if uid in queue["occupied"]:
 			if 'text' in update:
 				if text != "/end":
-					bot.sendMessage(queue["occupied"][uid], "Stranger: " + text)
+					bot.sendMessage(queue["occupied"][uid], "Stranger🐵: " + text)
 			
 			if 'photo' in update:
 				if config[str(queue["occupied"][uid])]["pics"]:
@@ -86,7 +86,7 @@ def handle(update):
 				queue["free"].append(uid)
 
 		if text == "/help":
-			bot.sendMessage(uid, "Help:\n\nUse /start to start looking for a conversational partner, once you're matched you can use /end to end the conversation.\n\nIf you have any questions or require help, join @TFChat or ask @borzetta.\n@TheFamilyTeam")
+			bot.sendMessage(uid, "Help:\n\nUse /start to start looking for a conversational partner, once you're matched you can use /end to end the conversation.\n\nIf you have any questions or require help, join @sadnesstalk or ask @sadnesstalk.\n@antigabutbrothers")
 
 		if text == "/nopics":
 			config[str(uid)]["pics"] = not config[str(uid)]["pics"] 
