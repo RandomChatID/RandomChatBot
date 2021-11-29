@@ -4,7 +4,7 @@ import time
 import os
 import json
 
-token = "2119285705:AAFvhvmN7tMzPqqxvHaHp5i32UGkjM9uy1s"
+token = TOKEN
 bot = telepot.Bot(token)
 
 queue = {
