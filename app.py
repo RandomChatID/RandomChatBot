@@ -103,8 +103,8 @@ def handle(update):
 				queue["free"].remove(partner)
 				queue["occupied"][uid] = partner
 				queue["occupied"][partner] = uid
-				bot.sendMessage(uid, 'You have been matched, have fun!')
-				bot.sendMessage(partner, 'You have been matched, have fun!')
+				bot.sendMessage(uid, 'Anda telah cocok, bersenang-senang!')
+				bot.sendMessage(partner, 'Anda telah cocok, bersenang-senang!')
 	except 	Exception as e:
 		print('[!] Error: ' + str(e))
 
